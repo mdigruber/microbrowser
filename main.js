@@ -3,7 +3,7 @@ const path = require('path')
 
 function createWindow () {
   const win = new BrowserWindow({
-    width: 800,
+    width: 1200,
     height: 1000,
     webPreferences: {
      
@@ -15,13 +15,13 @@ function createWindow () {
   win.loadFile('index.html')
 
 
-  ipcMain.handle('dark-mode:toggle', () => {
-    console.log("hallo")
-  })
+  // ipcMain.handle('dark-mode:toggle', () => {
+  //   console.log("hallo")
+  // })
 
-  ipcMain.handle('dark-mode:system', () => {
-    nativeTheme.themeSource = 'system'
-  })
+  // ipcMain.handle('dark-mode:system', () => {
+  //   nativeTheme.themeSource = 'system'
+  // })
 }
 
 app.whenReady().then(() => {
