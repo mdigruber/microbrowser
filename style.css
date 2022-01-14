@@ -10,6 +10,9 @@ div.searchbar {
 
 div.searchbar input {
     width: 100%;
+    border: 1px solid rgba(0,0,0, 0.4);
+    padding-left: 10px;
+    border-radius: 10px;
 }
 
 button#search {
